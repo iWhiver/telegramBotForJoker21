@@ -1,0 +1,44 @@
+l-start:
+  Started Joker Bot
+c-start:
+  Привет! Ты на конференции Joker! Для получения списка всех команд бота вызови /help
+  Рекомендую вызвать команду /getInformation - там есть очень полезные ссылки
+  И напиши мне в личку @getpush - расскажи как тебе доклад
+c-help: |
+  Список команд
+  1) /schedule - получить ссылку на программу Joker
+  2) /currentPresentation - получить информацию о текущем докладе
+  3) /getInformation - получить ссылки на статьи, чаты по телеграм разработке
+  4) /getTelegramChannel - получить ссылку на канал с дискуссией
+c-schedule: |
+  Программа конференции Joker
+  https://jokerconf.com/schedule/
+c-currentPresentation: |
+  Делаем Telegram-бота за пару минут на Java
+
+  Иван покажет весь процесс создания простого Telegram-бота на Java: от регистрации в botFather до запуска. Познакомит с нюансами и подводными камнями в разработке. Прослушав этот доклад, вы сможете запустить собственного Telegram-бота!
+
+  Спикер: Белоречев Иван
+  Telegram - @getpush
+  Github - https://github.com/iWhiver
+  Instagram - https://instagram.com/iWhiver
+c-getInformation: |
+  *) Мой чат по программированию - https://t.me/joinchat/rs2KeWV7vrU1OTMy
+
+  если вам нужна консультация или вы ищите команду для разработки своего проекта - вступайте. Сейчас собираем команду разработчиков на создание p2p обменника криптовалюты, крипторобота и создание digest новостей автоматизированно. Буду рад вас видеть
+
+  1) Чат обсуждения - https://t.me/joinchat/kORQ1qbPuLBkYjdi
+
+  2) Полезная статья по телеграм ботам на домашнее изучение - https://habr.com/ru/post/543676/
+  3) Есть сообщество разработчиков более тысячи челочек, которое готово помочь, english only - https://telegram.me/JavaBotsApi
+  4) Полезный канал с анонсами изменений в API - https://t.me/BotNews
+
+  5) Примеры реализации ботов на текущей библиотеке - https://github.com/rubenlagus/TelegramBotsExample
+
+  6) Чат по общим вопросам разработки ТГ ботов не только java - https://t.me/joinchat/CIhvgUgL0qnS5R8n6tq_Cg
+  7) Чат помощи по самой библиотеки - https://telegram.me/JavaBotsApi
+  8) Чат в котором вам посоветуют уже готового бота и вы сможете проверить не изобретаете ли вы велосипед -
+  https://t.me/joinchat/BEqxykAVc_3aNu906D2v7A
+
+c-error:
+  Прости, не знаю такую команду, вызови /help для получения списка всех команд
