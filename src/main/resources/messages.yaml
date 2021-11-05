@@ -29,15 +29,19 @@ c-getInformation: |
 
   1) Чат обсуждения - https://t.me/joinchat/kORQ1qbPuLBkYjdi
 
-  2) Полезная статья по телеграм ботам на домашнее изучение - https://habr.com/ru/post/543676/
-  3) Есть сообщество разработчиков более тысячи челочек, которое готово помочь, english only - https://telegram.me/JavaBotsApi
-  4) Полезный канал с анонсами изменений в API - https://t.me/BotNews
+  2) Ваша библия по API telegram bots - https://core.telegram.org/bots/api#getting-updates
+  3) Список всех фреймворков для разработки ботов (python, JS, Java, даже Lua и C++) - https://core.telegram.org/bots/samples
+  
+  4) Хороший гайд на английском для старта - https://telegra.ph/Introduction-to-bot-programming-02-21
+  5) Полезная статья по телеграм ботам на домашнее изучение - https://habr.com/ru/post/543676/
+  6) Есть сообщество разработчиков более тысячи челочек, которое готово помочь, english only - https://telegram.me/JavaBotsApi
+  7) Полезный канал с анонсами изменений в API - https://t.me/BotNews
 
-  5) Примеры реализации ботов на текущей библиотеке - https://github.com/rubenlagus/TelegramBotsExample
+  8) Примеры реализации ботов на текущей библиотеке - https://github.com/rubenlagus/TelegramBotsExample
 
-  6) Чат по общим вопросам разработки ТГ ботов не только java - https://t.me/joinchat/CIhvgUgL0qnS5R8n6tq_Cg
-  7) Чат помощи по самой библиотеки - https://telegram.me/JavaBotsApi
-  8) Чат в котором вам посоветуют уже готового бота и вы сможете проверить не изобретаете ли вы велосипед -
+  9) Чат по общим вопросам разработки ТГ ботов не только java - https://t.me/joinchat/CIhvgUgL0qnS5R8n6tq_Cg
+  10) Чат помощи по самой библиотеки - https://telegram.me/JavaBotsApi
+  11) Чат в котором вам посоветуют уже готового бота и вы сможете проверить не изобретаете ли вы велосипед -
   https://t.me/joinchat/BEqxykAVc_3aNu906D2v7A
 
 c-error:
