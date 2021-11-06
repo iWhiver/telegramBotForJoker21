@@ -6,10 +6,14 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class JokerBot extends TelegramLongPollingBot {
 
     private final YamlVariables privateVar = new YamlVariables("private.yaml");
     private final YamlVariables messages = new YamlVariables("messages.yaml");
+	private final String DATE_FORMAT = "HH:mm:ss dd-MM-yyyy";
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -17,11 +21,20 @@ public class JokerBot extends TelegramLongPollingBot {
             try {
                 Message incomingMessage = update.getMessage();
                 SendMessage sendMessage = handleIncomingMessage(incomingMessage);
+
+                System.out.println(messages.getVariable("l-update") + getCurrentTime());
+
                 execute(sendMessage);
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    private String getCurrentTime() {
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat(DATE_FORMAT);
+        return formatter.format(date);
     }
 
     private SendMessage handleIncomingMessage(Message incomingMessage) {
