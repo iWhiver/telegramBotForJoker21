@@ -6,15 +6,15 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class Runner {
 
-    private final static YamlVariables messages = new YamlVariables("messages.yaml");
+	private final static YamlVariables messages = new YamlVariables("messages.yaml");
 
-    public static void main(String[] args) {
-        try {
-            TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            botsApi.registerBot(new JokerBot());
-            System.out.println(messages.getVariable("l-start"));
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
-    }
+	public static void main(String[] args) {
+		try {
+			TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+			botsApi.registerBot(new JokerBot());
+			System.out.println(messages.getVariable("l-start"));
+		} catch (TelegramApiException e) {
+			e.printStackTrace();
+		}
+	}
 }
