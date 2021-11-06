@@ -1,12 +1,28 @@
+
 plugins {
     id 'java'
 }
 
 group 'org.example'
-version '1.0-SNAPSHOT'
+version '1.0'
+def mainClassName = "ru.ivan.telegram.Runner"
 
 repositories {
     mavenCentral()
+}
+
+task fatJar(type: Jar) {
+    manifest {
+        attributes(
+                'Main-Class': mainClassName,
+        )
+    }
+
+    from {
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
 }
 
 dependencies {
